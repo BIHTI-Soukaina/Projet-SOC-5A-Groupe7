@@ -1,0 +1,149 @@
+{
+  "preview": false,
+  "init_offset": 0,
+  "messages": [],
+  "fields": [
+    {
+      "name": "_bkt"
+    },
+    {
+      "name": "_cd"
+    },
+    {
+      "name": "_indextime"
+    },
+    {
+      "name": "_raw"
+    },
+    {
+      "name": "_serial"
+    },
+    {
+      "name": "_si"
+    },
+    {
+      "name": "_sourcetype"
+    },
+    {
+      "name": "_subsecond"
+    },
+    {
+      "name": "_time"
+    },
+    {
+      "name": "event.event_title"
+    },
+    {
+      "name": "event.impact"
+    },
+    {
+      "name": "host"
+    },
+    {
+      "name": "index"
+    },
+    {
+      "name": "linecount"
+    },
+    {
+      "name": "source"
+    },
+    {
+      "name": "sourcetype"
+    },
+    {
+      "name": "splunk_server"
+    }
+  ],
+  "results": [
+    {
+      "_bkt": "alerts~1~AAB5BEF9-989E-44B6-84DA-0C39B3C87511",
+      "_cd": "1:207854",
+      "_indextime": "1731183374",
+      "_raw": "{\"_time\": 1731183360.5128248, \"event_key\": \"672fc300c8f5d6b70e077b97\", \"event\": {\"_key\": \"672fc300c8f5d6b70e077b97\", \"_index\": \"alerts\", \"event_title\": \"Network Share Discovery\", \"tenant_uid\": \"default\", \"impact\": \"medium\", \"urgency\": \"medium\", \"priority\": 2, \"assignee\": \"unassigned\", \"search_name\": \"Network Share Discovery\", \"originQuery\": {\"query_string\": \"index%3D%22connectix%22%0A%28sourcetype%3D%22WinEventLog%22%0A%20OR%20sourcetype%3D%22suricata%22%0A%20OR%20sourcetype%3D%22WinEventLog%3AMicrosoft-Windows-Sysmon/Operational%22%0A%20OR%20sourcetype%3D%22WinEventLog%3AMicrosoft-Windows-Powershell/Operational%22%29%0A%20EventCode%3D5140%20OR%20EventCode%3D5142%20OR%20EventCode%3D5143%20OR%20EventCode%3D5144%0A%7C%20where%20Accesses%3D%22ReadData%20%28or%20ListDirectory%29%22%0A%7C%20where%20NOT%20cidrmatch%28%22192.168.10.0/24%22%2C%20src_ip%29%0A%7C%20where%20user%21%3D%22SYSTEM%22%20AND%20user%21%3D%22LOCAL%20SERVICE%22%20AND%20user%21%3D%22NETWORK%20SERVICE%22%0A%7C%20table%20_time%20src_ip%20src_port%20user%20Share_Name%20Accesses%0A%7C%20sort%20-_time\", \"query_earliest\": 1730577600, \"query_latest\": 1731183300, \"query_app\": \"search\", \"query_view\": \"search\", \"description\": \"Reconnaissance d' une attaque, visant \\u00e0 collecter des informations ou \\u00e0 pr\\u00e9parer l\\u2019acc\\u00e8s \\u00e0 des ressources internes\"}, \"count\": 1, \"status\": \"6708f79eacb7e736e905a646\", \"notifications\": \"6708f79facb7e736e905a650\", \"tags\": [], \"notable_fields\": [\"Account_Name\", \"ComputerName\", \"Process_Name\"], \"first_seen\": 1731183314.427778, \"most_recent\": 1731183314.427778, \"event_ttl\": -1, \"ttl_target\": null, \"template\": \"672fb9aac8f5d6b70e077ad3\", \"resolution\": null}}",
+      "_serial": "0",
+      "_si": [
+        "soc-5a-4as-g1",
+        "alerts"
+      ],
+      "_sourcetype": "ame-initial-entry",
+      "_subsecond": ".5128248",
+      "_time": "2024-11-09T20:16:00.512+00:00",
+      "event.event_title": "Network Share Discovery",
+      "event.impact": "medium",
+      "host": "soc-5a-splunk-7",
+      "index": "alerts",
+      "linecount": "1",
+      "source": "http:alerts",
+      "sourcetype": "ame-initial-entry",
+      "splunk_server": "soc-5a-4as-g1"
+    },
+    {
+      "_bkt": "alerts~1~AAB5BEF9-989E-44B6-84DA-0C39B3C87511",
+      "_cd": "1:205067",
+      "_indextime": "1731182904",
+      "_raw": "{\"_time\": 1731182904.5662236, \"event_key\": \"672fc138c8f5d6b70e077b56\", \"event\": {\"_key\": \"672fc138c8f5d6b70e077b56\", \"_index\": \"alerts\", \"event_title\": \"Detection of Drive-by Compromise via Suspicious Process Creation\", \"tenant_uid\": \"default\", \"impact\": \"medium\", \"urgency\": \"medium\", \"priority\": 2, \"assignee\": \"unassigned\", \"search_name\": \"Detection of Drive-by Compromise via Suspicious Process Creation\", \"originQuery\": {\"query_string\": \"index%3Dconnectix%20sourcetype%3DWinEventLog%3ASecurity%20OR%20sourcetype%3DWinEventLog%3AMicrosoft-Windows-Sysmon/Operational%7C%20eval%20CommandLine%3Dcoalesce%28CommandLine%2C%20ParentCommandLine%29%7C%20eval%20CommandLine%3Dlower%28CommandLine%29%7C%20search%20OriginalFileName%20IN%20%28%22wmic.exe%22%2C%20%22powershell.exe%22%2C%20%22wbemtool.exe%22%2C%20%22wmiprvse.exe%22%2C%20%22wmiadap.exe%22%2C%20%22scrcons.exe%22%29%7C%20stats%20count%20by%20%20OriginalFileName%2C%20ComputerName%2C%20CommandLine%2C%20ParentCommandLine%2C%20Hashes%20%7C%20table%20OriginalFileName%2C%20ComputerName%2C%20CommandLine%2C%20ParentCommandLine%2C%20Hashes%2C%20count\", \"query_earliest\": 1731096000, \"query_latest\": 1731182880, \"query_app\": \"search\", \"query_view\": \"search\", \"description\": \"Identify potential drive-by download attacks where browsers initiate unexpected processes, possibly indicating exploitation through malicious websites.\"}, \"count\": 1, \"status\": \"6708f79eacb7e736e905a646\", \"notifications\": \"6708f79facb7e736e905a650\", \"tags\": [], \"notable_fields\": [\" OriginalFileName\", \"ComputerName\", \"CommandLine\", \"ParentCommandLine\", \"ParentUser\", \"UtcTime\"], \"first_seen\": 1731182883.9848, \"most_recent\": 1731182883.9848, \"event_ttl\": -1, \"ttl_target\": null, \"template\": \"672fbf06c8f5d6b70e077b03\", \"resolution\": null}}",
+      "_serial": "1",
+      "_si": [
+        "soc-5a-4as-g1",
+        "alerts"
+      ],
+      "_sourcetype": "ame-initial-entry",
+      "_subsecond": ".5662236",
+      "_time": "2024-11-09T20:08:24.566+00:00",
+      "event.event_title": "Detection of Drive-by Compromise via Suspicious Process Creation",
+      "event.impact": "medium",
+      "host": "soc-5a-splunk-7",
+      "index": "alerts",
+      "linecount": "1",
+      "source": "http:alerts",
+      "sourcetype": "ame-initial-entry",
+      "splunk_server": "soc-5a-4as-g1"
+    },
+    {
+      "_bkt": "alerts~1~AAB5BEF9-989E-44B6-84DA-0C39B3C87511",
+      "_cd": "1:25399",
+      "_indextime": "1731145243",
+      "_raw": "{\"_time\": 1731145243.3551657, \"event_key\": \"672f2e1bc8f5d6b70e077771\", \"event\": {\"_key\": \"672f2e1bc8f5d6b70e077771\", \"_index\": \"alerts\", \"event_title\": \"Defense Evasion arret ou desactivation de service\", \"tenant_uid\": \"default\", \"impact\": \"medium\", \"urgency\": \"medium\", \"priority\": 2, \"assignee\": \"unassigned\", \"search_name\": \"Defense Evasion arret ou desactivation de service\", \"originQuery\": {\"query_string\": \"index%3Dconnectix%20%28source%3D%22WinEventLog%3ASystem%22%20OR%20source%3D%22WinEventLog%3AMicrosoft-Windows-Security-Mitigations/KernelMode%22%29%0AEventCode%3D7024%20OR%20EventCode%3D7045%20OR%20EventCode%3D7036%20%0A%7C%20search%20%22Stopped%22%20OR%20%22Disabled%22\", \"query_earliest\": 1731144900, \"query_latest\": 1731145200, \"query_app\": \"search\", \"query_view\": \"search\", \"description\": \"Elle vise \\u00e0 surveiller les modifications critiques dans l'\\u00e9tat des services syst\\u00e8me, ce qui pourrait indiquer une tentative de contournement de la s\\u00e9curit\\u00e9 (par d\\u00e9sactivation ou arr\\u00eat des services cl\\u00e9s)\"}, \"count\": 1, \"status\": \"6708f79eacb7e736e905a646\", \"notifications\": \"6708f79facb7e736e905a650\", \"tags\": [], \"notable_fields\": [\"Account_Name\", \"ComputerName\", \"Account_Domain\", \"EventCode\", \"Logon_ID\", \"name\"], \"first_seen\": 1731145210.962392, \"most_recent\": 1731145210.962392, \"event_ttl\": -1, \"ttl_target\": null, \"template\": \"672f28b6c8f5d6b70e0776b8\", \"resolution\": null}}",
+      "_serial": "2",
+      "_si": [
+        "soc-5a-4as-g1",
+        "alerts"
+      ],
+      "_sourcetype": "ame-initial-entry",
+      "_subsecond": ".3551657",
+      "_time": "2024-11-09T09:40:43.355+00:00",
+      "event.event_title": "Defense Evasion arret ou desactivation de service",
+      "event.impact": "medium",
+      "host": "soc-5a-splunk-7",
+      "index": "alerts",
+      "linecount": "1",
+      "source": "http:alerts",
+      "sourcetype": "ame-initial-entry",
+      "splunk_server": "soc-5a-4as-g1"
+    },
+    {
+      "_bkt": "alerts~1~AAB5BEF9-989E-44B6-84DA-0C39B3C87511",
+      "_cd": "1:23324",
+      "_indextime": "1731145242",
+      "_raw": "{\"_time\": 1731145241.3292077, \"event_key\": \"672f2e19c8f5d6b70e07776e\", \"event\": {\"_key\": \"672f2e19c8f5d6b70e07776e\", \"_index\": \"alerts\", \"event_title\": \"Defense Evasion \\u00e9viter la d\\u00e9tection Powershell\", \"tenant_uid\": \"default\", \"impact\": \"medium\", \"urgency\": \"medium\", \"priority\": 2, \"assignee\": \"unassigned\", \"search_name\": \"Defense Evasion \\u00e9viter la d\\u00e9tection Powershell\", \"originQuery\": {\"query_string\": \"index%3Dconnectix%20source%3D%22WinEventLog%3AMicrosoft-Windows-PowerShell/Operational%22%0A%28EventCode%3D4104%20OR%20EventCode%3D4103%29\", \"query_earliest\": 1731144900, \"query_latest\": 1731145200, \"query_app\": \"search\", \"query_view\": \"search\", \"description\": \"Cette requ\\u00eate permet de surveiller les activit\\u00e9s PowerShell suspectes pouvant indiquer des tentatives d'\\u00e9vasion via l'obfuscation ou le contournement des restrictions d'ex\\u00e9cution de PowerShell. notamment l'ex\\u00e9cution sans profil ou l'utilisation de commandes encod\\u00e9es : Pour dissimuler le contenu des commandes et \\u00e9chapper \\u00e0 la d\\u00e9tection.\"}, \"count\": 1, \"status\": \"6708f79eacb7e736e905a646\", \"notifications\": \"6708f79facb7e736e905a650\", \"tags\": [], \"notable_fields\": [\"Account_Name\", \"ComputerName\", \"Account_Domain\", \"EventCode\", \"Logon_ID\", \"name\"], \"first_seen\": 1731145203.400184, \"most_recent\": 1731145203.400184, \"event_ttl\": -1, \"ttl_target\": null, \"template\": \"672f2c0cc8f5d6b70e077729\", \"resolution\": null}}",
+      "_serial": "3",
+      "_si": [
+        "soc-5a-4as-g1",
+        "alerts"
+      ],
+      "_sourcetype": "ame-initial-entry",
+      "_subsecond": ".3292077",
+      "_time": "2024-11-09T09:40:41.329+00:00",
+      "event.event_title": "Defense Evasion \u00e9viter la d\u00e9tection Powershell",
+      "event.impact": "medium",
+      "host": "soc-5a-splunk-7",
+      "index": "alerts",
+      "linecount": "1",
+      "source": "http:alerts",
+      "sourcetype": "ame-initial-entry",
+      "splunk_server": "soc-5a-4as-g1"
+    }
+  ],
+  "highlighted": {}
+}
