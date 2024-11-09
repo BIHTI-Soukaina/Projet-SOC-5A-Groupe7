@@ -11,7 +11,7 @@ service = client.connect(
     port='8089',
     scheme='https',
     username='dini',
-    password='azerty1234'
+    password='*****'
 )
 # Requête de recherche Splunk
 search_query = 'search index="alerts" event.event_title="*" event.impact="medium"'
