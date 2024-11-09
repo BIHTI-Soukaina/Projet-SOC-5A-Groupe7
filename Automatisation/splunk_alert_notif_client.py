@@ -11,7 +11,7 @@ service = client.connect(
     port='8089',
     scheme='https',
     username='dini',
-    password='****'
+    password='azerty1234'
 )
 # Requête de recherche Splunk
 search_query = 'search index="alerts" event.event_title="*" event.impact="medium"'
@@ -27,17 +27,27 @@ with open('data.json', 'w') as f:
     f.write(json_formatted_str)
 
 # Modèle de bulletin d'alerte en Markdown
-template= """
-{% for result in jsout['results'] %}
-# Alerte : {{ result['event_title'] }}
-    Source : **{{ result['source'] }}**
-    Horodatage : {{ datetime.datetime.fromisoformat(result['_time']) }}
-    Instance Splunk : {{ result['host'] }}
-{% endfor %}
-"""
+# template= """
+# {% for result in jsout['results'] %}
+# # Alerte : {{ result['event_title'] }}
+#     Source : **{{ result['source'] }}**
+#     Horodatage : {{ datetime.datetime.fromisoformat(result['_time']) }}
+#     Instance Splunk : {{ result['host'] }}
+# {% endfor %}
+# """
+
+# Charger le modèle depuis un fichier
+with open('../Livrables/template/notification_incident_template.md', 'r') as file:
+    template_content = file.read()
+
 # Initialisation de notre template Jinja
-jinja_template = Template(template)
+jinja_template = Template(template_content)
+
 # Pour utiliser une bibliothèque Python dans votre template Jinja, il faut l'importer dans l'appel à la méthode render ci dessous :
-print(jinja_template.render(jsout=jsout, datetime=datetime))
+output = jinja_template.render(jsout=jsout, datetime=datetime)
+
+# Enregistrer le rapport en format Markdown
+with open('../Livrables/notification_incident.md', 'w') as f:
+    f.write(output)
 
 service.logout()
