@@ -23,7 +23,7 @@ title: Injection en mémoire via Cobalt Strike, Beacon, Reflective DLL Injection
 id: 6b96f4d2-10da-41c1-b6a2-4d10f59b4bb0
 status: experimental
 description: Cette règle détecte l'injection de code en mémoire via **Cobalt Strike**, **Beacon**, **Reflective DLL Injection**, **Process Hollowing**, et **PowerShell Load Library (PLL)**, utilisées pour maintenir la persistance et exécuter du code malveillant de manière furtive.
-author: Thomas B.
+author: Yasmine BRAHITI
 date: 2024-11-10
 tags:
     - attack.t1071
