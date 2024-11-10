@@ -2,7 +2,7 @@
 
 Cette règle détecte les requêtes HTTP qui incluent des en-têtes sensibles comme `Cookie`, `Authorization`, ou `Set-Cookie`, et qui contiennent des valeurs spécifiques telles que les tokens `Bearer` ou les identifiants de session (`session_id`). Cela permet de surveiller le passage de jetons d'authentification ou de sessions, souvent critiques pour la sécurité.
 
-# Criticité : **MEDIUM**
+# Criticité : **LOW**
 
 # Outils
 
@@ -29,7 +29,7 @@ tags: - attack.t1071.001 -
 logsource: 
 	product: network_traffic 
 	service: suricata detection: selection: http.request_headers{}: - name: "Cookie" - name: "Authorization" - name: "Set-Cookie" http.request_headers{}.value|contains: - "Bearer" - "session_id" condition: selection falsepositives: - Transmissions légitimes de jetons d'authentification ou de sessions pour des applications de confiance. 
-level: medium
+level: low
 ```
 
 

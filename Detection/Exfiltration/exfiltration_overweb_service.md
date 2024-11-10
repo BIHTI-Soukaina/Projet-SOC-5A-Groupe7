@@ -3,7 +3,7 @@
 
 Cette règle surveille le trafic réseau HTTP/HTTPS dirigé vers des serveurs spécifiés (`SRV-PRD-SHARE`, `SRV-PRD-DB`) avec des méthodes HTTP `POST`, en vérifiant que des données (octets) ont bien été envoyées dans la requête.
 
-# Criticité : **LOW**
+# Criticité : **MEDIUM**
 
 # Outils
 
@@ -49,7 +49,7 @@ detection:
     condition: selection
 falsepositives:
     - Transferts légitimes de fichiers ou de données vers les serveurs web internes.
-level: low
+level: medium
 ```
 
 # Explication

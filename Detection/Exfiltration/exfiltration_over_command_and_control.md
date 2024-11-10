@@ -3,7 +3,7 @@
 
 Cette règle détecte le trafic réseau impliquant certains ports couramment utilisés (par exemple, 53, 80, 443) entre une liste d'adresses IP locales et externes spécifiées, avec une quantité significative de données transférées (plus de 50 000 octets).
 
-# Criticité : **LOW**
+# Criticité : **HIGH**
 
 # Outils
 
@@ -74,7 +74,7 @@ detection:
     condition: selection
 falsepositives:
     - Transferts de fichiers légitimes ou connexions réseau de haute intensité pour des services autorisés.
-level: low
+level: high
 ```
 
 # Explication

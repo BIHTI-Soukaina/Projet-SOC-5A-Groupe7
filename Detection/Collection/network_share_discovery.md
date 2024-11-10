@@ -3,7 +3,7 @@
 
 Cette règle détecte les accès à des répertoires partagés en lecture par des utilisateurs non-systèmes, provenant d'adresses IP externes au réseau interne spécifié (excluant ici la plage 192.168.10.0/24). Les événements surveillés incluent les codes d’événement Windows correspondant aux accès aux répertoires partagés.
 
-# Criticité : **LOW**
+# Criticité : **MEDIUM**
 
 # Outils
 
@@ -56,7 +56,7 @@ detection:
     condition: selection and filter
 falsepositives:
     - Accès réseau légitime pour des opérations de maintenance ou de sauvegarde.
-level: low
+level: medium
 ```
 
 # Explication
