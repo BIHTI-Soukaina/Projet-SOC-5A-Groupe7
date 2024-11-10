@@ -23,7 +23,7 @@ title: Détection de la création ou modification de tâches planifiées
 id: 9876abcd-1234-5678-90ef-1234567890ab
 status: experimental
 description: Cette règle détecte la création ou modification de tâches planifiées sur un système à l'aide des événements de sécurité Windows (EventCode 4698 et 4699).
-author: Thomas B.
+author: Yasmine BRAHITI
 date: 2024-11-10
 tags:
     - attack.t1053
