@@ -37,7 +37,7 @@ OR
         OR "Add-MpPreference -ExclusionProcess"
     )
 )
-
+```
 # Règle SIGMA
 
 ```
