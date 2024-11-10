@@ -23,7 +23,7 @@ title: Détection d'en-têtes HTTP sensibles avec jetons d'authentification ou i
 id: f5a3c7b6-a8e3-4fa1-92d5-d0d8b1d6f7ab 
 status: experimental 
 description: Cette règle détecte les requêtes HTTP avec en-têtes sensibles incluant des valeurs d'authentification ou de session, telles que les tokens Bearer ou session_id. 
-author: Thomas B. 
+author: Soukaina BIHTI. 
 date: 2024-11-09 
 tags: - attack.t1071.001 - 
 logsource: 
