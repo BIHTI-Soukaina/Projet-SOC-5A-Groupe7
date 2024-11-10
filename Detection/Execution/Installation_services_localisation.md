@@ -6,7 +6,7 @@ Cette règle détecte l'installation de services en dehors des répertoires stan
 
 # Outils
 
-Sysmon
+WinEventLog
 
 # Règle SPL
 
