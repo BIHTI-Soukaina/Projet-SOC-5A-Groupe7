@@ -1,12 +1,12 @@
 # Description
 
-Cette règle sera levée en cas d'exécution de commandes PowerShell suspectes. Elle détecte l'utilisation de techniques courantes utilisées dans des attaques PowerShell, telles que l'exécution de commandes encodées, le contournement des politiques d'exécution, l'utilisation de `Invoke-Mimikatz`, ou l'injection de scripts via des commandes comme `Invoke-Expression` ou `IEX`. Ces techniques sont souvent utilisées pour exécuter du code malveillant à distance.
+Cette règle sera levée en cas d'exécution de commandes PowerShell suspectes. Elle détecte l'utilisation de techniques courantes utilisées dans des attaques PowerShell.
 
 # Criticité : **HIGH**
 
 # Outils
 
-Sysmon
+Powershell
 
 # Règle SPL
 
