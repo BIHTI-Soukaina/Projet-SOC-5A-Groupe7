@@ -17,7 +17,20 @@ index="connectix" ( sourcetype="WinEventLog
 # Règle SIGMA
 
 ```
-title: Détection des tentatives d'extraction de mots de passe ou d'exploitation de LSASS via Mimikatz id: 4d839c91-6f33-4f61-b1b4-3b348f7a9b85 status: experimental description: Cette règle détecte l'exécution de commandes utilisées par des outils comme Mimikatz pour extraire des mots de passe ou interagir avec LSASS. Elle est activée par la création de processus ou l'attribution de privilèges spécifiques dans les événements Windows. author: Awa Dieye date: 2024-11-09 tags: - attack.t1003.002 - attack.t1071.001 logsource: product: windows category: sysmon detection: selection: EventID: 1 CommandLine|contains: - "sekurlsa::logonpasswords" - "Mimikatz" - "NTLM" - "LSASS" - "logonpasswords" - "dump" - "msv1_0" - "kerberos" - "NTDS" - "LsaDumper" - "Invoke-Mimikatz" - "privilege::debug" condition: selection falsepositives: - Exécution légitime d'outils administratifs ou de dépannage pour la gestion des mots de passe. level: high
+title: Détection des tentatives d'extraction de mots de passe ou d'exploitation de LSASS via Mimikatz
+id: 4d839c91-6f33-4f61-b1b4-3b348f7a9b85
+status: experimental
+description: Cette règle détecte l'exécution de commandes utilisées par des outils comme Mimikatz pour extraire des mots de passe ou interagir avec LSASS. Elle est activée par la création de processus ou l'attribution de privilèges spécifiques dans les événements Windows.
+author: Awa Dieye
+date: 2024-11-09
+tags: - attack.t1003.002 - attack.t1071.001
+logsource:
+  product: windows
+  category: sysmon
+detection:
+  selection:
+    EventID: 1
+CommandLine|contains: - "sekurlsa::logonpasswords" - "Mimikatz" - "NTLM" - "LSASS" - "logonpasswords" - "dump" - "msv1_0" - "kerberos" - "NTDS" - "LsaDumper" - "Invoke-Mimikatz" - "privilege::debug" condition: selection falsepositives: - Exécution légitime d'outils administratifs ou de dépannage pour la gestion des mots de passe. level: high
 
 ```
 
