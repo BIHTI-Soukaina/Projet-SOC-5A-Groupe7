@@ -11,7 +11,7 @@ Sysmon, Windows Event Log, Mimikatz
 ```spl
 
 index="connectix" ( sourcetype="WinEventLog
-/Operational" OR sourcetype="sysmon" OR sourcetype="WinEventLog" ) (EventCode=1 OR EventCode=4672) // EventCode=1 pour la création de processus, 4672 pour l’attribution de privilèges ( "sekurlsa::logonpasswords" OR "Mimikatz" OR "NTLM" OR "LSASS" OR "logonpasswords" OR "dump" OR "msv1_0" OR "kerberos" OR "NTDS" OR "LsaDumper" OR "Invoke-Mimikatz" OR "privilege::debug" )
+/Operational" OR sourcetype="sysmon" OR sourcetype="WinEventLog" ) (EventCode=1 OR EventCode=4672) ( "sekurlsa::logonpasswords" OR "Mimikatz" OR "NTLM" OR "LSASS" OR "logonpasswords" OR "dump" OR "msv1_0" OR "kerberos" OR "NTDS" OR "LsaDumper" OR "Invoke-Mimikatz" OR "privilege::debug" )
 ```
 
 # Règle SIGMA
