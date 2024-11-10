@@ -27,7 +27,7 @@ title: Détection de l'installation de services en dehors des répertoires stand
 id: 9177e299-e18a-4c42-b6b5-c3ed2f57f829
 status: experimental
 description: Cette règle détecte l'installation de services en dehors des répertoires standards de Windows, ce qui peut indiquer une tentative d'installation de logiciels malveillants.
-author: Thomas B.
+author: Yasmine BRAHITI
 date: 2024-11-10
 tags:
     - attack.t1543.003
@@ -43,7 +43,7 @@ detection:
     condition: selection
 falsepositives:
     - Installation de logiciels légitimes dans des répertoires non standards
-level: high
+level: medium
 ```
 
 # Explication
