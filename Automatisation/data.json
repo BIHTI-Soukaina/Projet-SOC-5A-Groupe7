@@ -4,19 +4,538 @@
   "messages": [],
   "fields": [
     {
+      "name": "action"
+    },
+    {
+      "name": "assignee"
+    },
+    {
+      "name": "attribute"
+    },
+    {
+      "name": "comment"
+    },
+    {
+      "name": "details"
+    },
+    {
+      "name": "event._index"
+    },
+    {
+      "name": "event._key"
+    },
+    {
+      "name": "event.assignee"
+    },
+    {
+      "name": "event.count"
+    },
+    {
+      "name": "event.event_title"
+    },
+    {
+      "name": "event.event_ttl"
+    },
+    {
+      "name": "event.first_seen"
+    },
+    {
+      "name": "event.impact"
+    },
+    {
+      "name": "event.most_recent"
+    },
+    {
+      "name": "event.notable_fields{}"
+    },
+    {
+      "name": "event.notifications"
+    },
+    {
+      "name": "event.originQuery.description"
+    },
+    {
+      "name": "event.originQuery.query_app"
+    },
+    {
+      "name": "event.originQuery.query_earliest"
+    },
+    {
+      "name": "event.originQuery.query_latest"
+    },
+    {
+      "name": "event.originQuery.query_string"
+    },
+    {
+      "name": "event.originQuery.query_view"
+    },
+    {
+      "name": "event.priority"
+    },
+    {
+      "name": "event.resolution"
+    },
+    {
+      "name": "event.search_name"
+    },
+    {
+      "name": "event.status"
+    },
+    {
+      "name": "event.template"
+    },
+    {
+      "name": "event.tenant_uid"
+    },
+    {
+      "name": "event.ttl_target"
+    },
+    {
+      "name": "event.urgency"
+    },
+    {
+      "name": "event_key"
+    },
+    {
+      "name": "eventtype"
+    },
+    {
+      "name": "fields.Accesses"
+    },
+    {
+      "name": "fields.Account_Domain"
+    },
+    {
+      "name": "fields.Account_Name"
+    },
+    {
+      "name": "fields.Account_Name{}"
+    },
+    {
+      "name": "fields.CategoryInfo"
+    },
+    {
+      "name": "fields.CommandInvocation_Out_Default_"
+    },
+    {
+      "name": "fields.CommandLine"
+    },
+    {
+      "name": "fields.Company"
+    },
+    {
+      "name": "fields.ComputerName"
+    },
+    {
+      "name": "fields.CurrentDirectory"
+    },
+    {
+      "name": "fields.Description"
+    },
+    {
+      "name": "fields.DestinationIp"
+    },
+    {
+      "name": "fields.DestinationPort"
+    },
+    {
+      "name": "fields.Error_Code"
+    },
+    {
+      "name": "fields.EventCode"
+    },
+    {
+      "name": "fields.EventType"
+    },
+    {
+      "name": "fields.Failure_Reason"
+    },
+    {
+      "name": "fields.FileVersion"
+    },
+    {
+      "name": "fields.FullyQualifiedErrorId"
+    },
+    {
+      "name": "fields.Hashes"
+    },
+    {
+      "name": "fields.Host"
+    },
+    {
+      "name": "fields.Image"
+    },
+    {
+      "name": "fields.IntegrityLevel"
+    },
+    {
+      "name": "fields.Keywords"
+    },
+    {
+      "name": "fields.LogName"
+    },
+    {
+      "name": "fields.LogonGuid"
+    },
+    {
+      "name": "fields.LogonId"
+    },
+    {
+      "name": "fields.Logon_ID"
+    },
+    {
+      "name": "fields.Logon_Type"
+    },
+    {
+      "name": "fields.Message"
+    },
+    {
+      "name": "fields.NonTerminatingError_Invoke_Command_"
+    },
+    {
+      "name": "fields.OpCode"
+    },
+    {
+      "name": "fields.OriginalFileName"
+    },
+    {
+      "name": "fields.ParameterBinding_ConvertTo_SecureString_{}"
+    },
+    {
+      "name": "fields.ParameterBinding_Invoke_Command_{}"
+    },
+    {
+      "name": "fields.ParameterBinding_New_Object_{}"
+    },
+    {
+      "name": "fields.ParameterBinding_Out_Default_"
+    },
+    {
+      "name": "fields.ParameterBinding_Out_Default_{}"
+    },
+    {
+      "name": "fields.ParameterBinding_Out_String_"
+    },
+    {
+      "name": "fields.ParameterBinding_Set_StrictMode_"
+    },
+    {
+      "name": "fields.ParentCommandLine"
+    },
+    {
+      "name": "fields.ParentImage"
+    },
+    {
+      "name": "fields.ParentProcessGuid"
+    },
+    {
+      "name": "fields.ParentProcessId"
+    },
+    {
+      "name": "fields.ParentUser"
+    },
+    {
+      "name": "fields.ProcessGuid"
+    },
+    {
+      "name": "fields.ProcessId"
+    },
+    {
+      "name": "fields.Product"
+    },
+    {
+      "name": "fields.RecordNumber"
+    },
+    {
+      "name": "fields.RuleName"
+    },
+    {
+      "name": "fields.Security_ID"
+    },
+    {
+      "name": "fields.Share_Name"
+    },
+    {
+      "name": "fields.Sid"
+    },
+    {
+      "name": "fields.SidType"
+    },
+    {
+      "name": "fields.SourceIp"
+    },
+    {
+      "name": "fields.SourceName"
+    },
+    {
+      "name": "fields.TaskCategory"
+    },
+    {
+      "name": "fields.Task_Content"
+    },
+    {
+      "name": "fields.Task_Name"
+    },
+    {
+      "name": "fields.TerminalSessionId"
+    },
+    {
+      "name": "fields.Type"
+    },
+    {
+      "name": "fields.User"
+    },
+    {
+      "name": "fields.User{}"
+    },
+    {
+      "name": "fields.UtcTime"
+    },
+    {
+      "name": "fields._bkt"
+    },
+    {
+      "name": "fields._cd"
+    },
+    {
+      "name": "fields._eventtype_color"
+    },
+    {
+      "name": "fields._indextime"
+    },
+    {
+      "name": "fields._pre_msg"
+    },
+    {
+      "name": "fields._raw"
+    },
+    {
+      "name": "fields._serial"
+    },
+    {
+      "name": "fields._si{}"
+    },
+    {
+      "name": "fields._sourcetype"
+    },
+    {
+      "name": "fields._time"
+    },
+    {
+      "name": "fields.action"
+    },
+    {
+      "name": "fields.app"
+    },
+    {
+      "name": "fields.body"
+    },
+    {
+      "name": "fields.category"
+    },
+    {
+      "name": "fields.count"
+    },
+    {
+      "name": "fields.dest"
+    },
+    {
+      "name": "fields.dest_ip"
+    },
+    {
+      "name": "fields.dest_nt_domain"
+    },
+    {
+      "name": "fields.dest_nt_host"
+    },
+    {
+      "name": "fields.dvc"
+    },
+    {
+      "name": "fields.dvc_nt_host"
+    },
+    {
+      "name": "fields.event_id"
+    },
+    {
+      "name": "fields.eventtype"
+    },
+    {
+      "name": "fields.eventtype{}"
+    },
+    {
+      "name": "fields.host"
+    },
+    {
+      "name": "fields.id"
+    },
+    {
+      "name": "fields.index"
+    },
+    {
+      "name": "fields.linecount"
+    },
+    {
+      "name": "fields.member_dn"
+    },
+    {
+      "name": "fields.member_id"
+    },
+    {
+      "name": "fields.member_nt_domain"
+    },
+    {
+      "name": "fields.name"
+    },
+    {
+      "name": "fields.object"
+    },
+    {
+      "name": "fields.product"
+    },
+    {
+      "name": "fields.punct"
+    },
+    {
+      "name": "fields.session_id"
+    },
+    {
+      "name": "fields.severity"
+    },
+    {
+      "name": "fields.severity_id"
+    },
+    {
+      "name": "fields.signature"
+    },
+    {
+      "name": "fields.signature_id"
+    },
+    {
+      "name": "fields.source"
+    },
+    {
+      "name": "fields.sourcetype"
+    },
+    {
+      "name": "fields.splunk_server"
+    },
+    {
+      "name": "fields.src_ip"
+    },
+    {
+      "name": "fields.src_nt_domain"
+    },
+    {
+      "name": "fields.src_port"
+    },
+    {
+      "name": "fields.status"
+    },
+    {
+      "name": "fields.subject"
+    },
+    {
+      "name": "fields.ta_windows_action"
+    },
+    {
+      "name": "fields.tag"
+    },
+    {
+      "name": "fields.tag::action"
+    },
+    {
+      "name": "fields.tag::eventtype"
+    },
+    {
+      "name": "fields.tag::eventtype{}"
+    },
+    {
+      "name": "fields.tag{}"
+    },
+    {
+      "name": "fields.user"
+    },
+    {
+      "name": "fields.vendor"
+    },
+    {
+      "name": "host"
+    },
+    {
+      "name": "index"
+    },
+    {
+      "name": "linecount"
+    },
+    {
+      "name": "new_key"
+    },
+    {
+      "name": "new_value"
+    },
+    {
+      "name": "old_key"
+    },
+    {
+      "name": "old_value"
+    },
+    {
+      "name": "punct"
+    },
+    {
+      "name": "source"
+    },
+    {
+      "name": "sourcetype"
+    },
+    {
+      "name": "splunk_server"
+    },
+    {
+      "name": "splunk_server_group"
+    },
+    {
+      "name": "tag"
+    },
+    {
+      "name": "tag::action"
+    },
+    {
+      "name": "tag::eventtype"
+    },
+    {
+      "name": "tenant"
+    },
+    {
+      "name": "test_success"
+    },
+    {
+      "name": "time"
+    },
+    {
+      "name": "timestamp"
+    },
+    {
+      "name": "user"
+    },
+    {
       "name": "_bkt"
     },
     {
       "name": "_cd"
     },
     {
+      "name": "_eventtype_color"
+    },
+    {
       "name": "_indextime"
     },
     {
-      "name": "_raw"
+      "name": "_kv"
     },
     {
-      "name": "_serial"
+      "name": "_raw"
     },
     {
       "name": "_si"
@@ -29,121 +548,546 @@
     },
     {
       "name": "_time"
-    },
-    {
-      "name": "event.event_title"
-    },
-    {
-      "name": "event.impact"
-    },
-    {
-      "name": "host"
-    },
-    {
-      "name": "index"
-    },
-    {
-      "name": "linecount"
-    },
-    {
-      "name": "source"
-    },
-    {
-      "name": "sourcetype"
-    },
-    {
-      "name": "splunk_server"
     }
   ],
   "results": [
     {
+      "event._index": "alerts",
+      "event._key": "6730d8a7c8f5d6b70e077fcd",
+      "event.assignee": "unassigned",
+      "event.count": "1",
+      "event.event_title": "Detect DNS Tunneling",
+      "event.event_ttl": "-1",
+      "event.first_seen": "1731254407.262889",
+      "event.impact": "high",
+      "event.most_recent": "1731254407.262889",
+      "event.notable_fields{}": [
+        "src_ip",
+        "dest_ip"
+      ],
+      "event.notifications": "6708f79facb7e736e905a650",
+      "event.originQuery.description": "null",
+      "event.originQuery.query_app": "search",
+      "event.originQuery.query_earliest": "1731250800",
+      "event.originQuery.query_latest": "1731254400",
+      "event.originQuery.query_string": "index%3Dconnectix%20sourcetype%3Dsuricata%0A%7C%20search%20app_proto%3D%22dns%22%20AND%20dest_ip%3D%22%2A%22%20%0A%7C%20stats%20count%20by%20host%2C%20src_ip%2C%20dest_ip%0A%7C%20table%20host%2C%20src_ip%2C%20dest_ip%2C%20count",
+      "event.originQuery.query_view": "search",
+      "event.priority": "4",
+      "event.resolution": "null",
+      "event.search_name": "Detect DNS Tunneling",
+      "event.status": "6708f79eacb7e736e905a646",
+      "event.template": "6730c89ec8f5d6b70e077fa0",
+      "event.tenant_uid": "default",
+      "event.ttl_target": "null",
+      "event.urgency": "high",
+      "event_key": "6730d8a7c8f5d6b70e077fcd",
+      "host": "soc-5a-splunk-7",
+      "index": "alerts",
+      "linecount": "1",
+      "punct": "{\"\":_.,_\"\":_\"\",_\"\":_{\"\":_\"\",_\"\":_\"\",_\"\":_\"__\",_\"\":",
+      "source": "http:alerts",
+      "sourcetype": "ame-initial-entry",
+      "splunk_server": "soc-5a-4as-g1",
+      "time": "1731254439.1214101",
+      "_bkt": "alerts~1~AAB5BEF9-989E-44B6-84DA-0C39B3C87511",
+      "_cd": "1:625029",
+      "_indextime": "1731254439",
+      "_raw": "{\"_time\": 1731254439.1214101, \"event_key\": \"6730d8a7c8f5d6b70e077fcd\", \"event\": {\"_key\": \"6730d8a7c8f5d6b70e077fcd\", \"_index\": \"alerts\", \"event_title\": \"Detect DNS Tunneling\", \"tenant_uid\": \"default\", \"impact\": \"high\", \"urgency\": \"high\", \"priority\": 4, \"assignee\": \"unassigned\", \"search_name\": \"Detect DNS Tunneling\", \"originQuery\": {\"query_string\": \"index%3Dconnectix%20sourcetype%3Dsuricata%0A%7C%20search%20app_proto%3D%22dns%22%20AND%20dest_ip%3D%22%2A%22%20%0A%7C%20stats%20count%20by%20host%2C%20src_ip%2C%20dest_ip%0A%7C%20table%20host%2C%20src_ip%2C%20dest_ip%2C%20count\", \"query_earliest\": 1731250800, \"query_latest\": 1731254400, \"query_app\": \"search\", \"query_view\": \"search\", \"description\": null}, \"count\": 1, \"status\": \"6708f79eacb7e736e905a646\", \"notifications\": \"6708f79facb7e736e905a650\", \"tags\": [], \"notable_fields\": [\"src_ip\", \"dest_ip\"], \"first_seen\": 1731254407.262889, \"most_recent\": 1731254407.262889, \"event_ttl\": -1, \"ttl_target\": null, \"template\": \"6730c89ec8f5d6b70e077fa0\", \"resolution\": null}}",
+      "_si": [
+        "soc-5a-4as-g1",
+        "alerts"
+      ],
+      "_sourcetype": "ame-initial-entry",
+      "_subsecond": ".1214101",
+      "_time": "2024-11-10T16:00:39.121+00:00"
+    },
+    {
+      "event._index": "alerts",
+      "event._key": "6730d51cc8f5d6b70e077fbe",
+      "event.assignee": "unassigned",
+      "event.count": "1",
+      "event.event_title": "Ajout des utilisateurs ou des groupes",
+      "event.event_ttl": "-1",
+      "event.first_seen": "1731253508.129435",
+      "event.impact": "medium",
+      "event.most_recent": "1731253508.129435",
+      "event.notable_fields{}": [
+        "Account_Name",
+        "ComputerName",
+        "Account_Domain",
+        "EventCode",
+        "Logon_ID",
+        "name"
+      ],
+      "event.notifications": "6708f79facb7e736e905a650",
+      "event.originQuery.description": "Cette requ\u00eate d\u00e9tecte les commandes net user, net localgroup, et net group avec le param\u00e8tre /add, qui peuvent \u00eatre utilis\u00e9es pour ajouter des utilisateurs ou des groupes, ce qui peut indiquer une tentative d\u2019\u00e9l\u00e9vation de privil\u00e8ges.",
+      "event.originQuery.query_app": "search",
+      "event.originQuery.query_earliest": "1731252600",
+      "event.originQuery.query_latest": "1731253500",
+      "event.originQuery.query_string": "index%3D%22connectix%22%0A%28%0A%20%20%20%20sourcetype%3D%22WinEventLog%3AMicrosoft-Windows-Sysmon/Operational%22%20%0A%20%20%20%20OR%20sourcetype%3D%22sysmon%22%0A%29EventCode%3D1",
+      "event.originQuery.query_view": "search",
+      "event.priority": "2",
+      "event.resolution": "null",
+      "event.search_name": "Ajout des utilisateurs ou des groupes",
+      "event.status": "6708f79eacb7e736e905a646",
+      "event.template": "6730d284c8f5d6b70e077fb7",
+      "event.tenant_uid": "default",
+      "event.ttl_target": "null",
+      "event.urgency": "medium",
+      "event_key": "6730d51cc8f5d6b70e077fbe",
+      "host": "soc-5a-splunk-7",
+      "index": "alerts",
+      "linecount": "1",
+      "punct": "{\"\":_.,_\"\":_\"\",_\"\":_{\"\":_\"\",_\"\":_\"\",_\"\":_\"_____\",_",
+      "source": "http:alerts",
+      "sourcetype": "ame-initial-entry",
+      "splunk_server": "soc-5a-4as-g1",
+      "time": "1731253532.3171659",
+      "_bkt": "alerts~1~AAB5BEF9-989E-44B6-84DA-0C39B3C87511",
+      "_cd": "1:616027",
+      "_indextime": "1731253532",
+      "_raw": "{\"_time\": 1731253532.3171659, \"event_key\": \"6730d51cc8f5d6b70e077fbe\", \"event\": {\"_key\": \"6730d51cc8f5d6b70e077fbe\", \"_index\": \"alerts\", \"event_title\": \"Ajout des utilisateurs ou des groupes\", \"tenant_uid\": \"default\", \"impact\": \"medium\", \"urgency\": \"medium\", \"priority\": 2, \"assignee\": \"unassigned\", \"search_name\": \"Ajout des utilisateurs ou des groupes\", \"originQuery\": {\"query_string\": \"index%3D%22connectix%22%0A%28%0A%20%20%20%20sourcetype%3D%22WinEventLog%3AMicrosoft-Windows-Sysmon/Operational%22%20%0A%20%20%20%20OR%20sourcetype%3D%22sysmon%22%0A%29EventCode%3D1\", \"query_earliest\": 1731252600, \"query_latest\": 1731253500, \"query_app\": \"search\", \"query_view\": \"search\", \"description\": \"Cette requ\\u00eate d\\u00e9tecte les commandes net user, net localgroup, et net group avec le param\\u00e8tre /add, qui peuvent \\u00eatre utilis\\u00e9es pour ajouter des utilisateurs ou des groupes, ce qui peut indiquer une tentative d\\u2019\\u00e9l\\u00e9vation de privil\\u00e8ges.\"}, \"count\": 1, \"status\": \"6708f79eacb7e736e905a646\", \"notifications\": \"6708f79facb7e736e905a650\", \"tags\": [], \"notable_fields\": [\"Account_Name\", \"ComputerName\", \"Account_Domain\", \"EventCode\", \"Logon_ID\", \"name\"], \"first_seen\": 1731253508.129435, \"most_recent\": 1731253508.129435, \"event_ttl\": -1, \"ttl_target\": null, \"template\": \"6730d284c8f5d6b70e077fb7\", \"resolution\": null}}",
+      "_si": [
+        "soc-5a-4as-g1",
+        "alerts"
+      ],
+      "_sourcetype": "ame-initial-entry",
+      "_subsecond": ".3171659",
+      "_time": "2024-11-10T15:45:32.317+00:00"
+    },
+    {
+      "event._index": "alerts",
+      "event._key": "6730ca8ec8f5d6b70e077fa9",
+      "event.assignee": "unassigned",
+      "event.count": "1",
+      "event.event_title": "Suspicious Use of WinRM on Port 5985",
+      "event.event_ttl": "-1",
+      "event.first_seen": "1731250806.246954",
+      "event.impact": "high",
+      "event.most_recent": "1731250806.246954",
+      "event.notable_fields{}": [
+        "Image",
+        "SourceIp",
+        "DestinationIp",
+        "DestinationPort",
+        "UtcTime",
+        "host"
+      ],
+      "event.notifications": "6708f79facb7e736e905a650",
+      "event.originQuery.description": "Detect potentially unauthorized use of WinRM (Windows Remote Management) over port 5985",
+      "event.originQuery.query_app": "search",
+      "event.originQuery.query_earliest": "1731247200",
+      "event.originQuery.query_latest": "1731250800",
+      "event.originQuery.query_string": "index%3Dconnectix%20sourcetype%3D%22WinEventLog%3AMicrosoft-Windows-Sysmon/Operational%22%20EventCode%3D3%0A%7C%20search%20DestinationPort%3D5985%20%28Image%3D%22%2Apowershell.exe%2A%22%20OR%20Image%3D%22%2Asvchost.exe%2A%22%29%20Sid%3D%22S-1-5-18%22%0A%7C%20stats%20count%20by%20Image%2C%20DestinationIp%2C%20DestinationPort%2C%20SourceIp%2C%20Sid%2C%20ComputerName%0A%7C%20where%20count%20%3E%205%0A%7C%20table%20Image%2C%20DestinationIp%2C%20DestinationPort%2C%20SourceIp%2C%20Sid%2C%20ComputerName%2C%20count",
+      "event.originQuery.query_view": "search",
+      "event.priority": "4",
+      "event.resolution": "null",
+      "event.search_name": "Suspicious Use of WinRM on Port 5985",
+      "event.status": "6708f79eacb7e736e905a646",
+      "event.template": "6730b1cbc8f5d6b70e077f7e",
+      "event.tenant_uid": "default",
+      "event.ttl_target": "null",
+      "event.urgency": "high",
+      "event_key": "6730ca8ec8f5d6b70e077fa9",
+      "host": "soc-5a-splunk-7",
+      "index": "alerts",
+      "linecount": "1",
+      "punct": "{\"\":_.,_\"\":_\"\",_\"\":_{\"\":_\"\",_\"\":_\"\",_\"\":_\"______\",",
+      "source": "http:alerts",
+      "sourcetype": "ame-initial-entry",
+      "splunk_server": "soc-5a-4as-g1",
+      "time": "1731250830.4795916",
+      "_bkt": "alerts~1~AAB5BEF9-989E-44B6-84DA-0C39B3C87511",
+      "_cd": "1:594948",
+      "_indextime": "1731250830",
+      "_raw": "{\"_time\": 1731250830.4795916, \"event_key\": \"6730ca8ec8f5d6b70e077fa9\", \"event\": {\"_key\": \"6730ca8ec8f5d6b70e077fa9\", \"_index\": \"alerts\", \"event_title\": \"Suspicious Use of WinRM on Port 5985\", \"tenant_uid\": \"default\", \"impact\": \"high\", \"urgency\": \"high\", \"priority\": 4, \"assignee\": \"unassigned\", \"search_name\": \"Suspicious Use of WinRM on Port 5985\", \"originQuery\": {\"query_string\": \"index%3Dconnectix%20sourcetype%3D%22WinEventLog%3AMicrosoft-Windows-Sysmon/Operational%22%20EventCode%3D3%0A%7C%20search%20DestinationPort%3D5985%20%28Image%3D%22%2Apowershell.exe%2A%22%20OR%20Image%3D%22%2Asvchost.exe%2A%22%29%20Sid%3D%22S-1-5-18%22%0A%7C%20stats%20count%20by%20Image%2C%20DestinationIp%2C%20DestinationPort%2C%20SourceIp%2C%20Sid%2C%20ComputerName%0A%7C%20where%20count%20%3E%205%0A%7C%20table%20Image%2C%20DestinationIp%2C%20DestinationPort%2C%20SourceIp%2C%20Sid%2C%20ComputerName%2C%20count\", \"query_earliest\": 1731247200, \"query_latest\": 1731250800, \"query_app\": \"search\", \"query_view\": \"search\", \"description\": \"Detect potentially unauthorized use of WinRM (Windows Remote Management) over port 5985\"}, \"count\": 1, \"status\": \"6708f79eacb7e736e905a646\", \"notifications\": \"6708f79facb7e736e905a650\", \"tags\": [], \"notable_fields\": [\"Image\", \"SourceIp\", \"DestinationIp\", \"DestinationPort\", \"UtcTime\", \"host\"], \"first_seen\": 1731250806.246954, \"most_recent\": 1731250806.246954, \"event_ttl\": -1, \"ttl_target\": null, \"template\": \"6730b1cbc8f5d6b70e077f7e\", \"resolution\": null}}",
+      "_si": [
+        "soc-5a-4as-g1",
+        "alerts"
+      ],
+      "_sourcetype": "ame-initial-entry",
+      "_subsecond": ".4795916",
+      "_time": "2024-11-10T15:00:30.479+00:00"
+    },
+    {
+      "event._index": "alerts",
+      "event._key": "6730ca8dc8f5d6b70e077fa6",
+      "event.assignee": "unassigned",
+      "event.count": "1",
+      "event.event_title": "Detect Outbound Connections on Unusual Ports",
+      "event.event_ttl": "-1",
+      "event.first_seen": "1731250804.424862",
+      "event.impact": "high",
+      "event.most_recent": "1731250804.424862",
+      "event.notable_fields{}": [
+        "src_ip",
+        "dest_ip"
+      ],
+      "event.notifications": "6708f79facb7e736e905a650",
+      "event.originQuery.description": "Potential C2 Communication via Non-Standard Port",
+      "event.originQuery.query_app": "search",
+      "event.originQuery.query_earliest": "1731247200",
+      "event.originQuery.query_latest": "1731250800",
+      "event.originQuery.query_string": "index%3Dconnectix%20sourcetype%3D%22suricata%22%0A%7C%20search%20NOT%20dest_port%20IN%20%2880%2C%20443%2C%2053%29%0A%7C%20stats%20count%20by%20src_ip%2C%20dest_ip%0A%7C%20table%20src_ip%2C%20dest_ip%2C%20count",
+      "event.originQuery.query_view": "search",
+      "event.priority": "4",
+      "event.resolution": "null",
+      "event.search_name": "Detect Outbound Connections on Unusual Ports",
+      "event.status": "6708f79eacb7e736e905a646",
+      "event.template": "6730c89ec8f5d6b70e077fa0",
+      "event.tenant_uid": "default",
+      "event.ttl_target": "null",
+      "event.urgency": "high",
+      "event_key": "6730ca8dc8f5d6b70e077fa6",
+      "host": "soc-5a-splunk-7",
+      "index": "alerts",
+      "linecount": "1",
+      "punct": "{\"\":_.,_\"\":_\"\",_\"\":_{\"\":_\"\",_\"\":_\"\",_\"\":_\"_____\",_",
+      "source": "http:alerts",
+      "sourcetype": "ame-initial-entry",
+      "splunk_server": "soc-5a-4as-g1",
+      "time": "1731250829.6930215",
+      "_bkt": "alerts~1~AAB5BEF9-989E-44B6-84DA-0C39B3C87511",
+      "_cd": "1:594861",
+      "_indextime": "1731250829",
+      "_raw": "{\"_time\": 1731250829.6930215, \"event_key\": \"6730ca8dc8f5d6b70e077fa6\", \"event\": {\"_key\": \"6730ca8dc8f5d6b70e077fa6\", \"_index\": \"alerts\", \"event_title\": \"Detect Outbound Connections on Unusual Ports\", \"tenant_uid\": \"default\", \"impact\": \"high\", \"urgency\": \"high\", \"priority\": 4, \"assignee\": \"unassigned\", \"search_name\": \"Detect Outbound Connections on Unusual Ports\", \"originQuery\": {\"query_string\": \"index%3Dconnectix%20sourcetype%3D%22suricata%22%0A%7C%20search%20NOT%20dest_port%20IN%20%2880%2C%20443%2C%2053%29%0A%7C%20stats%20count%20by%20src_ip%2C%20dest_ip%0A%7C%20table%20src_ip%2C%20dest_ip%2C%20count\", \"query_earliest\": 1731247200, \"query_latest\": 1731250800, \"query_app\": \"search\", \"query_view\": \"search\", \"description\": \"Potential C2 Communication via Non-Standard Port\"}, \"count\": 1, \"status\": \"6708f79eacb7e736e905a646\", \"notifications\": \"6708f79facb7e736e905a650\", \"tags\": [], \"notable_fields\": [\"src_ip\", \"dest_ip\"], \"first_seen\": 1731250804.424862, \"most_recent\": 1731250804.424862, \"event_ttl\": -1, \"ttl_target\": null, \"template\": \"6730c89ec8f5d6b70e077fa0\", \"resolution\": null}}",
+      "_si": [
+        "soc-5a-4as-g1",
+        "alerts"
+      ],
+      "_sourcetype": "ame-initial-entry",
+      "_subsecond": ".6930215",
+      "_time": "2024-11-10T15:00:29.693+00:00"
+    },
+    {
+      "event._index": "alerts",
+      "event._key": "672fc300c8f5d6b70e077b97",
+      "event.assignee": "unassigned",
+      "event.count": "1",
+      "event.event_title": "Network Share Discovery",
+      "event.event_ttl": "-1",
+      "event.first_seen": "1731183314.427778",
+      "event.impact": "medium",
+      "event.most_recent": "1731183314.427778",
+      "event.notable_fields{}": [
+        "Account_Name",
+        "ComputerName",
+        "Process_Name"
+      ],
+      "event.notifications": "6708f79facb7e736e905a650",
+      "event.originQuery.description": "Reconnaissance d' une attaque, visant \u00e0 collecter des informations ou \u00e0 pr\u00e9parer l\u2019acc\u00e8s \u00e0 des ressources internes",
+      "event.originQuery.query_app": "search",
+      "event.originQuery.query_earliest": "1730577600",
+      "event.originQuery.query_latest": "1731183300",
+      "event.originQuery.query_string": "index%3D%22connectix%22%0A%28sourcetype%3D%22WinEventLog%22%0A%20OR%20sourcetype%3D%22suricata%22%0A%20OR%20sourcetype%3D%22WinEventLog%3AMicrosoft-Windows-Sysmon/Operational%22%0A%20OR%20sourcetype%3D%22WinEventLog%3AMicrosoft-Windows-Powershell/Operational%22%29%0A%20EventCode%3D5140%20OR%20EventCode%3D5142%20OR%20EventCode%3D5143%20OR%20EventCode%3D5144%0A%7C%20where%20Accesses%3D%22ReadData%20%28or%20ListDirectory%29%22%0A%7C%20where%20NOT%20cidrmatch%28%22192.168.10.0/24%22%2C%20src_ip%29%0A%7C%20where%20user%21%3D%22SYSTEM%22%20AND%20user%21%3D%22LOCAL%20SERVICE%22%20AND%20user%21%3D%22NETWORK%20SERVICE%22%0A%7C%20table%20_time%20src_ip%20src_port%20user%20Share_Name%20Accesses%0A%7C%20sort%20-_time",
+      "event.originQuery.query_view": "search",
+      "event.priority": "2",
+      "event.resolution": "null",
+      "event.search_name": "Network Share Discovery",
+      "event.status": "6708f79eacb7e736e905a646",
+      "event.template": "672fb9aac8f5d6b70e077ad3",
+      "event.tenant_uid": "default",
+      "event.ttl_target": "null",
+      "event.urgency": "medium",
+      "event_key": "672fc300c8f5d6b70e077b97",
+      "host": "soc-5a-splunk-7",
+      "index": "alerts",
+      "linecount": "1",
+      "punct": "{\"\":_.,_\"\":_\"\",_\"\":_{\"\":_\"\",_\"\":_\"\",_\"\":_\"__\",_\"\":",
+      "source": "http:alerts",
+      "sourcetype": "ame-initial-entry",
+      "splunk_server": "soc-5a-4as-g1",
+      "time": "1731183360.5128248",
       "_bkt": "alerts~1~AAB5BEF9-989E-44B6-84DA-0C39B3C87511",
       "_cd": "1:207854",
       "_indextime": "1731183374",
       "_raw": "{\"_time\": 1731183360.5128248, \"event_key\": \"672fc300c8f5d6b70e077b97\", \"event\": {\"_key\": \"672fc300c8f5d6b70e077b97\", \"_index\": \"alerts\", \"event_title\": \"Network Share Discovery\", \"tenant_uid\": \"default\", \"impact\": \"medium\", \"urgency\": \"medium\", \"priority\": 2, \"assignee\": \"unassigned\", \"search_name\": \"Network Share Discovery\", \"originQuery\": {\"query_string\": \"index%3D%22connectix%22%0A%28sourcetype%3D%22WinEventLog%22%0A%20OR%20sourcetype%3D%22suricata%22%0A%20OR%20sourcetype%3D%22WinEventLog%3AMicrosoft-Windows-Sysmon/Operational%22%0A%20OR%20sourcetype%3D%22WinEventLog%3AMicrosoft-Windows-Powershell/Operational%22%29%0A%20EventCode%3D5140%20OR%20EventCode%3D5142%20OR%20EventCode%3D5143%20OR%20EventCode%3D5144%0A%7C%20where%20Accesses%3D%22ReadData%20%28or%20ListDirectory%29%22%0A%7C%20where%20NOT%20cidrmatch%28%22192.168.10.0/24%22%2C%20src_ip%29%0A%7C%20where%20user%21%3D%22SYSTEM%22%20AND%20user%21%3D%22LOCAL%20SERVICE%22%20AND%20user%21%3D%22NETWORK%20SERVICE%22%0A%7C%20table%20_time%20src_ip%20src_port%20user%20Share_Name%20Accesses%0A%7C%20sort%20-_time\", \"query_earliest\": 1730577600, \"query_latest\": 1731183300, \"query_app\": \"search\", \"query_view\": \"search\", \"description\": \"Reconnaissance d' une attaque, visant \\u00e0 collecter des informations ou \\u00e0 pr\\u00e9parer l\\u2019acc\\u00e8s \\u00e0 des ressources internes\"}, \"count\": 1, \"status\": \"6708f79eacb7e736e905a646\", \"notifications\": \"6708f79facb7e736e905a650\", \"tags\": [], \"notable_fields\": [\"Account_Name\", \"ComputerName\", \"Process_Name\"], \"first_seen\": 1731183314.427778, \"most_recent\": 1731183314.427778, \"event_ttl\": -1, \"ttl_target\": null, \"template\": \"672fb9aac8f5d6b70e077ad3\", \"resolution\": null}}",
-      "_serial": "0",
       "_si": [
         "soc-5a-4as-g1",
         "alerts"
       ],
       "_sourcetype": "ame-initial-entry",
       "_subsecond": ".5128248",
-      "_time": "2024-11-09T20:16:00.512+00:00",
-      "event.event_title": "Network Share Discovery",
+      "_time": "2024-11-09T20:16:00.512+00:00"
+    },
+    {
+      "event._index": "alerts",
+      "event._key": "672fc138c8f5d6b70e077b56",
+      "event.assignee": "unassigned",
+      "event.count": "1",
+      "event.event_title": "Detection of Drive-by Compromise via Suspicious Process Creation",
+      "event.event_ttl": "-1",
+      "event.first_seen": "1731182883.9848",
       "event.impact": "medium",
+      "event.most_recent": "1731182883.9848",
+      "event.notable_fields{}": [
+        " OriginalFileName",
+        "ComputerName",
+        "CommandLine",
+        "ParentCommandLine",
+        "ParentUser",
+        "UtcTime"
+      ],
+      "event.notifications": "6708f79facb7e736e905a650",
+      "event.originQuery.description": "Identify potential drive-by download attacks where browsers initiate unexpected processes, possibly indicating exploitation through malicious websites.",
+      "event.originQuery.query_app": "search",
+      "event.originQuery.query_earliest": "1731096000",
+      "event.originQuery.query_latest": "1731182880",
+      "event.originQuery.query_string": "index%3Dconnectix%20sourcetype%3DWinEventLog%3ASecurity%20OR%20sourcetype%3DWinEventLog%3AMicrosoft-Windows-Sysmon/Operational%7C%20eval%20CommandLine%3Dcoalesce%28CommandLine%2C%20ParentCommandLine%29%7C%20eval%20CommandLine%3Dlower%28CommandLine%29%7C%20search%20OriginalFileName%20IN%20%28%22wmic.exe%22%2C%20%22powershell.exe%22%2C%20%22wbemtool.exe%22%2C%20%22wmiprvse.exe%22%2C%20%22wmiadap.exe%22%2C%20%22scrcons.exe%22%29%7C%20stats%20count%20by%20%20OriginalFileName%2C%20ComputerName%2C%20CommandLine%2C%20ParentCommandLine%2C%20Hashes%20%7C%20table%20OriginalFileName%2C%20ComputerName%2C%20CommandLine%2C%20ParentCommandLine%2C%20Hashes%2C%20count",
+      "event.originQuery.query_view": "search",
+      "event.priority": "2",
+      "event.resolution": "null",
+      "event.search_name": "Detection of Drive-by Compromise via Suspicious Process Creation",
+      "event.status": "6708f79eacb7e736e905a646",
+      "event.template": "672fbf06c8f5d6b70e077b03",
+      "event.tenant_uid": "default",
+      "event.ttl_target": "null",
+      "event.urgency": "medium",
+      "event_key": "672fc138c8f5d6b70e077b56",
       "host": "soc-5a-splunk-7",
       "index": "alerts",
       "linecount": "1",
+      "punct": "{\"\":_.,_\"\":_\"\",_\"\":_{\"\":_\"\",_\"\":_\"\",_\"\":_\"__-_____",
       "source": "http:alerts",
       "sourcetype": "ame-initial-entry",
-      "splunk_server": "soc-5a-4as-g1"
-    },
-    {
+      "splunk_server": "soc-5a-4as-g1",
+      "time": "1731182904.5662236",
       "_bkt": "alerts~1~AAB5BEF9-989E-44B6-84DA-0C39B3C87511",
       "_cd": "1:205067",
       "_indextime": "1731182904",
       "_raw": "{\"_time\": 1731182904.5662236, \"event_key\": \"672fc138c8f5d6b70e077b56\", \"event\": {\"_key\": \"672fc138c8f5d6b70e077b56\", \"_index\": \"alerts\", \"event_title\": \"Detection of Drive-by Compromise via Suspicious Process Creation\", \"tenant_uid\": \"default\", \"impact\": \"medium\", \"urgency\": \"medium\", \"priority\": 2, \"assignee\": \"unassigned\", \"search_name\": \"Detection of Drive-by Compromise via Suspicious Process Creation\", \"originQuery\": {\"query_string\": \"index%3Dconnectix%20sourcetype%3DWinEventLog%3ASecurity%20OR%20sourcetype%3DWinEventLog%3AMicrosoft-Windows-Sysmon/Operational%7C%20eval%20CommandLine%3Dcoalesce%28CommandLine%2C%20ParentCommandLine%29%7C%20eval%20CommandLine%3Dlower%28CommandLine%29%7C%20search%20OriginalFileName%20IN%20%28%22wmic.exe%22%2C%20%22powershell.exe%22%2C%20%22wbemtool.exe%22%2C%20%22wmiprvse.exe%22%2C%20%22wmiadap.exe%22%2C%20%22scrcons.exe%22%29%7C%20stats%20count%20by%20%20OriginalFileName%2C%20ComputerName%2C%20CommandLine%2C%20ParentCommandLine%2C%20Hashes%20%7C%20table%20OriginalFileName%2C%20ComputerName%2C%20CommandLine%2C%20ParentCommandLine%2C%20Hashes%2C%20count\", \"query_earliest\": 1731096000, \"query_latest\": 1731182880, \"query_app\": \"search\", \"query_view\": \"search\", \"description\": \"Identify potential drive-by download attacks where browsers initiate unexpected processes, possibly indicating exploitation through malicious websites.\"}, \"count\": 1, \"status\": \"6708f79eacb7e736e905a646\", \"notifications\": \"6708f79facb7e736e905a650\", \"tags\": [], \"notable_fields\": [\" OriginalFileName\", \"ComputerName\", \"CommandLine\", \"ParentCommandLine\", \"ParentUser\", \"UtcTime\"], \"first_seen\": 1731182883.9848, \"most_recent\": 1731182883.9848, \"event_ttl\": -1, \"ttl_target\": null, \"template\": \"672fbf06c8f5d6b70e077b03\", \"resolution\": null}}",
-      "_serial": "1",
       "_si": [
         "soc-5a-4as-g1",
         "alerts"
       ],
       "_sourcetype": "ame-initial-entry",
       "_subsecond": ".5662236",
-      "_time": "2024-11-09T20:08:24.566+00:00",
-      "event.event_title": "Detection of Drive-by Compromise via Suspicious Process Creation",
-      "event.impact": "medium",
+      "_time": "2024-11-09T20:08:24.566+00:00"
+    },
+    {
+      "event._index": "alerts",
+      "event._key": "672f4b5cc8f5d6b70e077a5b",
+      "event.assignee": "unassigned",
+      "event.count": "1",
+      "event.event_title": "Cr\u00e9ation de t\u00e2che planifi\u00e9e",
+      "event.event_ttl": "-1",
+      "event.first_seen": "1731152706.996301",
+      "event.impact": "low",
+      "event.most_recent": "1731152706.996301",
+      "event.notable_fields{}": [
+        "Account_Name",
+        "Account_Domain",
+        "ComputerName",
+        "EventCode"
+      ],
+      "event.notifications": "6708f79facb7e736e905a650",
+      "event.originQuery.description": "null",
+      "event.originQuery.query_app": "alert_manager_enterprise",
+      "event.originQuery.query_earliest": "1731149100",
+      "event.originQuery.query_latest": "1731152700",
+      "event.originQuery.query_string": "index%3D%22connectix%22%20EventCode%3D4698",
+      "event.originQuery.query_view": "search",
+      "event.priority": "0",
+      "event.resolution": "null",
+      "event.search_name": "Cr\u00e9ation de t\u00e2che planifi\u00e9e",
+      "event.status": "6708f79eacb7e736e905a646",
+      "event.template": "672f359dc8f5d6b70e077884",
+      "event.tenant_uid": "default",
+      "event.ttl_target": "null",
+      "event.urgency": "low",
+      "event_key": "672f4b5cc8f5d6b70e077a5b",
       "host": "soc-5a-splunk-7",
       "index": "alerts",
       "linecount": "1",
+      "punct": "{\"\":_.,_\"\":_\"\",_\"\":_{\"\":_\"\",_\"\":_\"\",_\"\":_\"\\__\\_\\\",",
       "source": "http:alerts",
       "sourcetype": "ame-initial-entry",
-      "splunk_server": "soc-5a-4as-g1"
+      "splunk_server": "soc-5a-4as-g1",
+      "time": "1731152732.8053858",
+      "_bkt": "alerts~1~AAB5BEF9-989E-44B6-84DA-0C39B3C87511",
+      "_cd": "1:69839",
+      "_indextime": "1731152733",
+      "_raw": "{\"_time\": 1731152732.8053858, \"event_key\": \"672f4b5cc8f5d6b70e077a5b\", \"event\": {\"_key\": \"672f4b5cc8f5d6b70e077a5b\", \"_index\": \"alerts\", \"event_title\": \"Cr\\u00e9ation de t\\u00e2che planifi\\u00e9e\", \"tenant_uid\": \"default\", \"impact\": \"low\", \"urgency\": \"low\", \"priority\": 0, \"assignee\": \"unassigned\", \"search_name\": \"Cr\\u00e9ation de t\\u00e2che planifi\\u00e9e\", \"originQuery\": {\"query_string\": \"index%3D%22connectix%22%20EventCode%3D4698\", \"query_earliest\": 1731149100, \"query_latest\": 1731152700, \"query_app\": \"alert_manager_enterprise\", \"query_view\": \"search\", \"description\": null}, \"count\": 1, \"status\": \"6708f79eacb7e736e905a646\", \"notifications\": \"6708f79facb7e736e905a650\", \"tags\": [], \"notable_fields\": [\"Account_Name\", \"Account_Domain\", \"ComputerName\", \"EventCode\"], \"first_seen\": 1731152706.996301, \"most_recent\": 1731152706.996301, \"event_ttl\": -1, \"ttl_target\": null, \"template\": \"672f359dc8f5d6b70e077884\", \"resolution\": null}}",
+      "_si": [
+        "soc-5a-4as-g1",
+        "alerts"
+      ],
+      "_sourcetype": "ame-initial-entry",
+      "_subsecond": ".8053858",
+      "_time": "2024-11-09T11:45:32.805+00:00"
     },
     {
+      "event._index": "alerts",
+      "event._key": "672f2e1bc8f5d6b70e077771",
+      "event.assignee": "unassigned",
+      "event.count": "1",
+      "event.event_title": "Defense Evasion arret ou desactivation de service",
+      "event.event_ttl": "-1",
+      "event.first_seen": "1731145210.962392",
+      "event.impact": "medium",
+      "event.most_recent": "1731145210.962392",
+      "event.notable_fields{}": [
+        "Account_Name",
+        "ComputerName",
+        "Account_Domain",
+        "EventCode",
+        "Logon_ID",
+        "name"
+      ],
+      "event.notifications": "6708f79facb7e736e905a650",
+      "event.originQuery.description": "Elle vise \u00e0 surveiller les modifications critiques dans l'\u00e9tat des services syst\u00e8me, ce qui pourrait indiquer une tentative de contournement de la s\u00e9curit\u00e9 (par d\u00e9sactivation ou arr\u00eat des services cl\u00e9s)",
+      "event.originQuery.query_app": "search",
+      "event.originQuery.query_earliest": "1731144900",
+      "event.originQuery.query_latest": "1731145200",
+      "event.originQuery.query_string": "index%3Dconnectix%20%28source%3D%22WinEventLog%3ASystem%22%20OR%20source%3D%22WinEventLog%3AMicrosoft-Windows-Security-Mitigations/KernelMode%22%29%0AEventCode%3D7024%20OR%20EventCode%3D7045%20OR%20EventCode%3D7036%20%0A%7C%20search%20%22Stopped%22%20OR%20%22Disabled%22",
+      "event.originQuery.query_view": "search",
+      "event.priority": "2",
+      "event.resolution": "null",
+      "event.search_name": "Defense Evasion arret ou desactivation de service",
+      "event.status": "6708f79eacb7e736e905a646",
+      "event.template": "672f28b6c8f5d6b70e0776b8",
+      "event.tenant_uid": "default",
+      "event.ttl_target": "null",
+      "event.urgency": "medium",
+      "event_key": "672f2e1bc8f5d6b70e077771",
+      "host": "soc-5a-splunk-7",
+      "index": "alerts",
+      "linecount": "1",
+      "punct": "{\"\":_.,_\"\":_\"\",_\"\":_{\"\":_\"\",_\"\":_\"\",_\"\":_\"______\",",
+      "source": "http:alerts",
+      "sourcetype": "ame-initial-entry",
+      "splunk_server": "soc-5a-4as-g1",
+      "time": "1731145243.3551657",
       "_bkt": "alerts~1~AAB5BEF9-989E-44B6-84DA-0C39B3C87511",
       "_cd": "1:25399",
       "_indextime": "1731145243",
       "_raw": "{\"_time\": 1731145243.3551657, \"event_key\": \"672f2e1bc8f5d6b70e077771\", \"event\": {\"_key\": \"672f2e1bc8f5d6b70e077771\", \"_index\": \"alerts\", \"event_title\": \"Defense Evasion arret ou desactivation de service\", \"tenant_uid\": \"default\", \"impact\": \"medium\", \"urgency\": \"medium\", \"priority\": 2, \"assignee\": \"unassigned\", \"search_name\": \"Defense Evasion arret ou desactivation de service\", \"originQuery\": {\"query_string\": \"index%3Dconnectix%20%28source%3D%22WinEventLog%3ASystem%22%20OR%20source%3D%22WinEventLog%3AMicrosoft-Windows-Security-Mitigations/KernelMode%22%29%0AEventCode%3D7024%20OR%20EventCode%3D7045%20OR%20EventCode%3D7036%20%0A%7C%20search%20%22Stopped%22%20OR%20%22Disabled%22\", \"query_earliest\": 1731144900, \"query_latest\": 1731145200, \"query_app\": \"search\", \"query_view\": \"search\", \"description\": \"Elle vise \\u00e0 surveiller les modifications critiques dans l'\\u00e9tat des services syst\\u00e8me, ce qui pourrait indiquer une tentative de contournement de la s\\u00e9curit\\u00e9 (par d\\u00e9sactivation ou arr\\u00eat des services cl\\u00e9s)\"}, \"count\": 1, \"status\": \"6708f79eacb7e736e905a646\", \"notifications\": \"6708f79facb7e736e905a650\", \"tags\": [], \"notable_fields\": [\"Account_Name\", \"ComputerName\", \"Account_Domain\", \"EventCode\", \"Logon_ID\", \"name\"], \"first_seen\": 1731145210.962392, \"most_recent\": 1731145210.962392, \"event_ttl\": -1, \"ttl_target\": null, \"template\": \"672f28b6c8f5d6b70e0776b8\", \"resolution\": null}}",
-      "_serial": "2",
       "_si": [
         "soc-5a-4as-g1",
         "alerts"
       ],
       "_sourcetype": "ame-initial-entry",
       "_subsecond": ".3551657",
-      "_time": "2024-11-09T09:40:43.355+00:00",
-      "event.event_title": "Defense Evasion arret ou desactivation de service",
+      "_time": "2024-11-09T09:40:43.355+00:00"
+    },
+    {
+      "event._index": "alerts",
+      "event._key": "672f2e19c8f5d6b70e07776e",
+      "event.assignee": "unassigned",
+      "event.count": "1",
+      "event.event_title": "Defense Evasion \u00e9viter la d\u00e9tection Powershell",
+      "event.event_ttl": "-1",
+      "event.first_seen": "1731145203.400184",
       "event.impact": "medium",
+      "event.most_recent": "1731145203.400184",
+      "event.notable_fields{}": [
+        "Account_Name",
+        "ComputerName",
+        "Account_Domain",
+        "EventCode",
+        "Logon_ID",
+        "name"
+      ],
+      "event.notifications": "6708f79facb7e736e905a650",
+      "event.originQuery.description": "Cette requ\u00eate permet de surveiller les activit\u00e9s PowerShell suspectes pouvant indiquer des tentatives d'\u00e9vasion via l'obfuscation ou le contournement des restrictions d'ex\u00e9cution de PowerShell. notamment l'ex\u00e9cution sans profil ou l'utilisation de commandes encod\u00e9es : Pour dissimuler le contenu des commandes et \u00e9chapper \u00e0 la d\u00e9tection.",
+      "event.originQuery.query_app": "search",
+      "event.originQuery.query_earliest": "1731144900",
+      "event.originQuery.query_latest": "1731145200",
+      "event.originQuery.query_string": "index%3Dconnectix%20source%3D%22WinEventLog%3AMicrosoft-Windows-PowerShell/Operational%22%0A%28EventCode%3D4104%20OR%20EventCode%3D4103%29",
+      "event.originQuery.query_view": "search",
+      "event.priority": "2",
+      "event.resolution": "null",
+      "event.search_name": "Defense Evasion \u00e9viter la d\u00e9tection Powershell",
+      "event.status": "6708f79eacb7e736e905a646",
+      "event.template": "672f2c0cc8f5d6b70e077729",
+      "event.tenant_uid": "default",
+      "event.ttl_target": "null",
+      "event.urgency": "medium",
+      "event_key": "672f2e19c8f5d6b70e07776e",
       "host": "soc-5a-splunk-7",
       "index": "alerts",
       "linecount": "1",
+      "punct": "{\"\":_.,_\"\":_\"\",_\"\":_{\"\":_\"\",_\"\":_\"\",_\"\":_\"__\\__\\_\"",
       "source": "http:alerts",
       "sourcetype": "ame-initial-entry",
-      "splunk_server": "soc-5a-4as-g1"
-    },
-    {
+      "splunk_server": "soc-5a-4as-g1",
+      "time": "1731145241.3292077",
       "_bkt": "alerts~1~AAB5BEF9-989E-44B6-84DA-0C39B3C87511",
       "_cd": "1:23324",
       "_indextime": "1731145242",
       "_raw": "{\"_time\": 1731145241.3292077, \"event_key\": \"672f2e19c8f5d6b70e07776e\", \"event\": {\"_key\": \"672f2e19c8f5d6b70e07776e\", \"_index\": \"alerts\", \"event_title\": \"Defense Evasion \\u00e9viter la d\\u00e9tection Powershell\", \"tenant_uid\": \"default\", \"impact\": \"medium\", \"urgency\": \"medium\", \"priority\": 2, \"assignee\": \"unassigned\", \"search_name\": \"Defense Evasion \\u00e9viter la d\\u00e9tection Powershell\", \"originQuery\": {\"query_string\": \"index%3Dconnectix%20source%3D%22WinEventLog%3AMicrosoft-Windows-PowerShell/Operational%22%0A%28EventCode%3D4104%20OR%20EventCode%3D4103%29\", \"query_earliest\": 1731144900, \"query_latest\": 1731145200, \"query_app\": \"search\", \"query_view\": \"search\", \"description\": \"Cette requ\\u00eate permet de surveiller les activit\\u00e9s PowerShell suspectes pouvant indiquer des tentatives d'\\u00e9vasion via l'obfuscation ou le contournement des restrictions d'ex\\u00e9cution de PowerShell. notamment l'ex\\u00e9cution sans profil ou l'utilisation de commandes encod\\u00e9es : Pour dissimuler le contenu des commandes et \\u00e9chapper \\u00e0 la d\\u00e9tection.\"}, \"count\": 1, \"status\": \"6708f79eacb7e736e905a646\", \"notifications\": \"6708f79facb7e736e905a650\", \"tags\": [], \"notable_fields\": [\"Account_Name\", \"ComputerName\", \"Account_Domain\", \"EventCode\", \"Logon_ID\", \"name\"], \"first_seen\": 1731145203.400184, \"most_recent\": 1731145203.400184, \"event_ttl\": -1, \"ttl_target\": null, \"template\": \"672f2c0cc8f5d6b70e077729\", \"resolution\": null}}",
-      "_serial": "3",
       "_si": [
         "soc-5a-4as-g1",
         "alerts"
       ],
       "_sourcetype": "ame-initial-entry",
       "_subsecond": ".3292077",
-      "_time": "2024-11-09T09:40:41.329+00:00",
-      "event.event_title": "Defense Evasion \u00e9viter la d\u00e9tection Powershell",
-      "event.impact": "medium",
+      "_time": "2024-11-09T09:40:41.329+00:00"
+    },
+    {
+      "event._index": "alerts",
+      "event._key": "672f26cdc8f5d6b70e077672",
+      "event.assignee": "unassigned",
+      "event.count": "1",
+      "event.event_title": "Unsuccessful Logon Attempts",
+      "event.event_ttl": "-1",
+      "event.first_seen": "1731143344.108236",
+      "event.impact": "low",
+      "event.most_recent": "1731143344.108236",
+      "event.notable_fields{}": [
+        "Account_Name",
+        "ComputerName",
+        "Account_Domain",
+        "Logon_Type",
+        "EventCode"
+      ],
+      "event.notifications": "6708f79facb7e736e905a650",
+      "event.originQuery.description": "Alerts when an unsuccessful logon attempt is detected, indicating a potential unauthorized access or attack.",
+      "event.originQuery.query_app": "search",
+      "event.originQuery.query_earliest": "0",
+      "event.originQuery.query_latest": "1731143340",
+      "event.originQuery.query_string": "index%3Dconnectix%20source%3D%22WinEventLog%3ASecurity%22%20EventCode%3D%224625%22%0A%7C%20eval%20Host%3Dcoalesce%28Host%2C%20Source_Network_Address%29%0A%7C%20table%20_time%2C%20Host%2C%20Account_Name%2C%20Logon_Type%2C%20Failure_Reason%0A%7C%20sort%20-%20_time",
+      "event.originQuery.query_view": "search",
+      "event.priority": "0",
+      "event.resolution": "null",
+      "event.search_name": "Unsuccessful Logon Attempts",
+      "event.status": "6708f79eacb7e736e905a646",
+      "event.template": "672f23aec8f5d6b70e07766d",
+      "event.tenant_uid": "default",
+      "event.ttl_target": "null",
+      "event.urgency": "low",
+      "event_key": "672f26cdc8f5d6b70e077672",
+      "eventtype": "err0r",
       "host": "soc-5a-splunk-7",
       "index": "alerts",
       "linecount": "1",
+      "punct": "{\"\":_.,_\"\":_\"\",_\"\":_{\"\":_\"\",_\"\":_\"\",_\"\":_\"__\",_\"\":",
       "source": "http:alerts",
       "sourcetype": "ame-initial-entry",
-      "splunk_server": "soc-5a-4as-g1"
+      "splunk_server": "soc-5a-4as-g1",
+      "tag": "error",
+      "tag::eventtype": "error",
+      "time": "1731143373.3417835",
+      "_bkt": "alerts~1~AAB5BEF9-989E-44B6-84DA-0C39B3C87511",
+      "_cd": "1:20478",
+      "_eventtype_color": "none",
+      "_indextime": "1731143373",
+      "_raw": "{\"_time\": 1731143373.3417835, \"event_key\": \"672f26cdc8f5d6b70e077672\", \"event\": {\"_key\": \"672f26cdc8f5d6b70e077672\", \"_index\": \"alerts\", \"event_title\": \"Unsuccessful Logon Attempts\", \"tenant_uid\": \"default\", \"impact\": \"low\", \"urgency\": \"low\", \"priority\": 0, \"assignee\": \"unassigned\", \"search_name\": \"Unsuccessful Logon Attempts\", \"originQuery\": {\"query_string\": \"index%3Dconnectix%20source%3D%22WinEventLog%3ASecurity%22%20EventCode%3D%224625%22%0A%7C%20eval%20Host%3Dcoalesce%28Host%2C%20Source_Network_Address%29%0A%7C%20table%20_time%2C%20Host%2C%20Account_Name%2C%20Logon_Type%2C%20Failure_Reason%0A%7C%20sort%20-%20_time\", \"query_earliest\": 0, \"query_latest\": 1731143340, \"query_app\": \"search\", \"query_view\": \"search\", \"description\": \"Alerts when an unsuccessful logon attempt is detected, indicating a potential unauthorized access or attack.\"}, \"count\": 1, \"status\": \"6708f79eacb7e736e905a646\", \"notifications\": \"6708f79facb7e736e905a650\", \"tags\": [], \"notable_fields\": [\"Account_Name\", \"ComputerName\", \"Account_Domain\", \"Logon_Type\", \"EventCode\"], \"first_seen\": 1731143344.108236, \"most_recent\": 1731143344.108236, \"event_ttl\": -1, \"ttl_target\": null, \"template\": \"672f23aec8f5d6b70e07766d\", \"resolution\": null}}",
+      "_si": [
+        "soc-5a-4as-g1",
+        "alerts"
+      ],
+      "_sourcetype": "ame-initial-entry",
+      "_subsecond": ".3417835",
+      "_time": "2024-11-09T09:09:33.341+00:00"
     }
   ],
+  "tags": {
+    "eventtype": {
+      "err0r": [
+        "error"
+      ]
+    }
+  },
   "highlighted": {}
 }
