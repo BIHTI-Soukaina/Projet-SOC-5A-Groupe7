@@ -44,7 +44,7 @@ CommandLine|contains: - "net user" - "net localgroup" - "net group" search: Comm
 condition: selection AND search 
 falsepositives: - Modification légitime des groupes ou des utilisateurs par un administrateur.
 level: low
-
+```
 
 # Explication
 
