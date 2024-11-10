@@ -6,7 +6,7 @@ Cette règle détecte la modification ou l'exécution suspecte de tâches planif
 
 # Outils
 
-WinEventLog
+WinEventLog:system
 
 # Règle SPL
 
@@ -24,7 +24,7 @@ title: Détection de la modification ou exécution suspecte de tâches planifié
 id: f5b40d1c-ff92-4b89-8c6d-9ab02d9a5f93
 status: experimental
 description: Cette règle détecte les modifications ou l'exécution de tâches planifiées critiques de Windows, comme celles liées à Windows Defender, BitLocker ou Windows Update.
-author: Thomas B.
+author: Yasmine BRAHITI
 date: 2024-11-10
 tags:
     - attack.t1053.003
