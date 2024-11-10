@@ -11,10 +11,10 @@ service = client.connect(
     port='8089',
     scheme='https',
     username='dini',
-    password='azerty1234'
+    password='***'
 )
 # Requête de recherche Splunk
-search_query = 'search index="alerts" event.event_title="*" event.impact="medium"'
+search_query = 'search index="alerts" event.event_title="*" event.impact="*" | table *'
 # Envoi de la requête de recherche à Splunk
 search_results = service.jobs.oneshot(search_query, output_mode='json')
 # Récupération des résultats de la recherche au format JSON
@@ -37,7 +37,7 @@ with open('data.json', 'w') as f:
 # """
 
 # Charger le modèle depuis un fichier
-with open('../Livrables/template/notification_incident_template.md', 'r') as file:
+with open('template/notification_incident_template.md', 'r') as file:
     template_content = file.read()
 
 # Initialisation de notre template Jinja

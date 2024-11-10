@@ -15,10 +15,10 @@ Lors de la détection de cet incident, plusieurs accès suspects ont été obser
 
 ### Liste des alertes :
 
-| Horodatage          | Alerte / Activité observée      | Priorité | Détails / Contexte                                    | Actif impacté     | Utilisateur       |
+| Horodatage          | Alerte / Activité observée      | Urgence | Détails / Contexte                                    | Actif impacté     | Utilisateur       |
 |---------------------|---------------------------------|----------|------------------------------------------------------|--------------------|-------------------|
 {% for result in jsout['results'] -%}
-| {{ result['_time'] }} | {{ result['event.event_title'] }} | {{ result['event.impact'] }} | {{ result['event.impact'] }} | {{ result['event.impact'] }} | {{ result['event.impact'] }} |
+| {{ result['_time'] }} | {{ result['event.event_title'] }} | {{ result['event.urgency'] }} | {{ result['event.originQuery.description'] }} | {{ result['fields.Host'] }} | {{ result['fields.Account_Name'] }} |
 {% endfor %}
 
 # Plan d'action initial
