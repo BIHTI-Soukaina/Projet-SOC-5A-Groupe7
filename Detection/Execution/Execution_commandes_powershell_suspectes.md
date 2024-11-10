@@ -37,7 +37,7 @@ title: Détection de l'exécution de commandes PowerShell suspectes
 id: a3b5ef4b-8b7e-42d5-bb43-62b25b74f1e4
 status: experimental
 description: Cette règle détecte l'exécution de commandes PowerShell suspectes, telles que l'utilisation de `Invoke-Expression`, l'exécution de commandes encodées ou d'autres techniques malveillantes.
-author: Thomas B.
+author: Yasmine BRAHITI
 date: 2024-11-10
 tags:
     - attack.t1059.001
