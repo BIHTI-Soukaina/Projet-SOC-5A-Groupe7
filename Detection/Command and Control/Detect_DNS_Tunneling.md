@@ -4,7 +4,7 @@
 ## Description
 Cette règle détecte des activités de tunneling DNS potentielles, souvent utilisées dans les attaques de Command and Control (C2) pour exfiltrer des données ou maintenir une connexion avec un serveur de commande. Elle analyse les requêtes DNS de haute fréquence à des IPs externes.
 
-## Criticité : **HIGH**
+## Criticité : **LOW**
 
 ## Outils
 Suricata
