@@ -2,7 +2,7 @@
 
 Cette règle permet de détecter les événements de réinitialisation du journal de sécurité de Windows. L'événement **EventCode 1102** indique qu'un journal de sécurité a été réinitialisé, ce qui peut être un indicateur d'une tentative de manipulation ou de suppression des traces d'activités malveillantes. Cette règle est utilisée pour surveiller les réinitialisations du journal de sécurité, qui pourraient être un comportement suspect dans un environnement de sécurité.
 
-# Criticité : **High**
+# Criticité : **Medium**
 
 # Outils  
 Sysmon, Windows Event Log, Security Event Log
@@ -31,7 +31,7 @@ detection:
     condition: selection
 falsepositives:
     - Réinitialisation légitime du journal de sécurité par un administrateur
-level: high
+level: medium
 ```
 
 # Explication
