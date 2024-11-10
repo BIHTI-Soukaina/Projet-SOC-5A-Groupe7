@@ -1,0 +1,71 @@
+title: Detection of Unauthorized Token Impersonation by Standard Accounts
+id: c3b79b70-45a8-4f12-bc89-tokenimpersonation
+status: experimental
+logsource:
+  product: windows
+  service: security
+  eventid: 4672
+selection:
+  Account_Name:
+    - '!frank'
+    - '!olivia'
+    - '!alice'
+    - '!yara'
+    - '!david'
+    - '!katherine'
+    - '!uma'
+    - '!SRV-PRD-DC$'
+    - '!SRV-PRD-WEB$'
+    - '!SRV-PRD-DB$'
+    - '!SRV-PRD-SHARE$'
+  Target_Account: 'NT AUTHORITY\\SYSTEM'
+
+fields:
+  - host
+  - source
+  - sourcetype
+  - Account_Name
+  - ComputerName
+  - subject
+  - dest_nt_domain
+  - Privileges
+  - timestamp
+
+description: >
+  This rule detects the impersonation of NT AUTHORITY\SYSTEM tokens by standard accounts, which could indicate a privilege escalation attempt.
+  Successful token impersonation may grant attackers critical system privileges.
+
+detection:
+  selection:
+    EventID: 4672
+    Account_Name:
+      - '!frank'
+      - '!olivia'
+      - '!alice'
+      - '!yara'
+      - '!david'
+      - '!katherine'
+      - '!uma'
+      - '!SRV-PRD-DC$'
+      - '!SRV-PRD-WEB$'
+      - '!SRV-PRD-DB$'
+      - '!SRV-PRD-SHARE$'
+    Target_Account: 'NT AUTHORITY\\SYSTEM'
+  condition: selection
+
+tags:
+  - attack.privilege_escalation
+  - attack.t1134
+  - impact.high
+
+librairie_de_pivots:
+  - Hostname of the affected machine
+  - Account attempting the impersonation
+  - Targeted system privileges
+
+fiche_reflexe_remediation:
+  - Limit token impersonation rights to authorized accounts only.
+  - Monitor for unauthorized impersonation attempts.
+  - Investigate the affected accounts and take appropriate actions to revoke unauthorized privileges.
+
+ttl: 3600

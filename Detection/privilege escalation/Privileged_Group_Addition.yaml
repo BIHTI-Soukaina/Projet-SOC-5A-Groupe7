@@ -1,0 +1,75 @@
+title: Detection of Unauthorized User Addition to Privileged Groups
+id: a9d12b80-21f3-4f9e-bad1-groupadd
+status: experimental
+logsource:
+  product: windows
+  service: security
+  eventid:
+    - 4728
+    - 4732
+    - 4756
+selection:
+  Account_Name:
+    - '!frank'
+    - '!olivia'
+    - '!alice'
+    - '!yara'
+    - '!david'
+    - '!katherine'
+    - '!uma'
+    - '!SRV-PRD-DC$'
+    - '!SRV-PRD-WEB$'
+    - '!SRV-PRD-DB$'
+    - '!SRV-PRD-SHARE$'
+
+fields:
+  - host
+  - source
+  - sourcetype
+  - Account_Name
+  - Account_Domain
+  - member_dn
+  - member_nt_domain
+  - ComputerName
+  - timestamp
+
+description: >
+  This rule detects the unauthorized addition of users to privileged groups (e.g., Administrators) by non-administrative accounts.
+  Unauthorized privilege escalation can grant attackers administrative access, increasing the risk of system compromise.
+
+detection:
+  selection:
+    EventID:
+      - 4728
+      - 4732
+      - 4756
+    Account_Name:
+      - '!frank'
+      - '!olivia'
+      - '!alice'
+      - '!yara'
+      - '!david'
+      - '!katherine'
+      - '!uma'
+      - '!SRV-PRD-DC$'
+      - '!SRV-PRD-WEB$'
+      - '!SRV-PRD-DB$'
+      - '!SRV-PRD-SHARE$'
+  condition: selection
+
+tags:
+  - attack.privilege_escalation
+  - attack.t1078
+  - impact.high
+
+librairie_de_pivots:
+  - Hostname of the affected machine
+  - Account that initiated the addition
+  - Privileged group to which the user was added
+
+fiche_reflexe_remediation:
+  - Restrict the ability to add users to privileged groups to authorized administrative accounts only.
+  - Enable strict logging and regular audits of privileged groups.
+  - Investigate any unauthorized additions to privileged groups.
+
+ttl: 3600
