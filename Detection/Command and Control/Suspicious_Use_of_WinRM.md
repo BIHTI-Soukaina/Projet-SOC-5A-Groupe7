@@ -4,7 +4,7 @@
 ## Description
 Cette règle détecte l'utilisation suspecte de WinRM sur le port 5985 avec des processus potentiellement malveillants comme PowerShell et svchost, souvent utilisés pour établir des connexions Command and Control (C2).
 
-## Criticité : **HIGH**
+## Criticité : **LOW**
 
 ## Outils
 Sysmon
